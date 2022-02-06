@@ -1,13 +1,13 @@
 name: Publish to PyPI
 
-on:
-  release:
-    types: [published]
+on: push
+#  release:
+#    types: [published]
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/actions/check
+      - uses: ./.github/actions/check.yaml
       - run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
       - run: poetry publish --build
