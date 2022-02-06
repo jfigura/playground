@@ -1,4 +1,4 @@
-from playground.hello import hello
+from pytoo.hello import hello
 
 
 def test_hello():
