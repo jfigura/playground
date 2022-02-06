@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytoo"
-version = "0.1.1"
+version = "0.1.2"
 description = "Example Python Library"
 authors = ["Juraj Figura <guitarist90@gmail.com>"]
 
